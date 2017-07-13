@@ -4,7 +4,33 @@
 <meta charset="utf-8">
 <title>Story</title>
 </head>
-
-<body>
+<body style="font-family: sans-serif;">
+<div onMouseOut="javascript:hideDefenition();" id="DIV_EN" style="visibility: collapse; display: block; position: fixed; top: 0px; left: 0px; z-index: 2;background-color: whitesmoke">
+	<iframe id="IFRAME" width="250" height="150"></iframe>
+</div>
+<script>
+		
+		function getPos(element) {
+			var rect = element.getBoundingClientRect();
+            return {x:rect.left,y:rect.top}
+        }
+		
+		function showDefenition(element){
+			var str = element.id;
+			var xy = getPos(element);
+			document.getElementById("IFRAME").src = str + ".html"
+			document.getElementById("DIV_EN").style.left = xy.x;
+			document.getElementById("DIV_EN").style.top = xy.y;
+			document.getElementById("DIV_EN").style.display = "block";
+		}
+	    
+	    function hideDefenition(){
+			document.getElementById("DIV_EN").style.display = "none";
+		}
+	
+	</script> 
+<!--a id="DEF" onMouseOver="javascript:showDefenition(this);"></a!-->
+<p style="font-size: 50px;"><strong>Halo: Last man standing</strong></p>
+<p style="font-size: 35px;"><strong>Deutscher Titel: <br>Halo: Der letzte seiner Art</strong></p>
 </body>
 </html>
