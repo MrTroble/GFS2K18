@@ -5,12 +5,11 @@
 <title>Story</title>
 </head>
 <body style="font-family: sans-serif;">
-<div onMouseOut="javascript:hideDefenition();" id="DIV_EN" style="visibility: collapse; display: block; position: fixed; top: 0px; left: 0px; z-index: 2;background-color: whitesmoke">
-	<iframe id="IFRAME" width="250" height="150"></iframe>
+<div onMouseOut="javascript:hideDefenition();" id="DIV_EN" style="visibility: collapse; border-style: hidden;display: block; position: fixed; top: 0px; left: 0px; z-index: 2;background-color: white">
+	<iframe id="IFRAME" width="250" height="150" style="border-bottom-style: hidden;"></iframe>
 </div>
 <script>
-		
-		function getPos(element) {
+	    function getPos(element) {
 			var rect = element.getBoundingClientRect();
             return {x:rect.left,y:rect.top}
         }
@@ -19,18 +18,35 @@
 			var str = element.id;
 			var xy = getPos(element);
 			document.getElementById("IFRAME").src = str + ".html"
-			document.getElementById("DIV_EN").style.left = xy.x;
-			document.getElementById("DIV_EN").style.top = xy.y;
-			document.getElementById("DIV_EN").style.display = "block";
+			var stl = document.getElementById("DIV_EN").style;
+			stl.left = xy.x + "px";
+			stl.top = xy.y + "px";
+			stl.visibility = "visible";
 		}
 	    
 	    function hideDefenition(){
-			document.getElementById("DIV_EN").style.display = "none";
+			document.getElementById("DIV_EN").style.visibility = "collapse";
 		}
-	
-	</script> 
-<!--a id="DEF" onMouseOver="javascript:showDefenition(this);"></a!-->
+</script> 
+<style>
+	a{
+		color: red;
+	}
+</style>
 <p style="font-size: 50px;"><strong>Halo: Last man standing</strong></p>
 <p style="font-size: 35px;"><strong>Deutscher Titel: <br>Halo: Der letzte seiner Art</strong></p>
+
+<ul>
+ <li>Inhaltsangabe</li>
+ <li>1. <a href="#1">Hurra die Welt geht unter</a></li>
+</ul>
+<br>
+<br>
+<h2 id="1">Kapitel 1: <br> Hurra die Welt geht unter</h2>
+
+Er sahs auf einem selbstgebauten Liegestuhl ähnlichen Gebilde aus Holz. Während er <a id="KIZ" onMouseOver="javascript:showDefenition(this);">"Hurra die Welt geht unter" von K.I.Z</a> hörte setzte er seine Sonnenbrille auf und er merkte das der Song ein bischen auf ihn zutraf.
+5 Jahre war es nun her. Seid dem war er nun hier auf dieser <a id="Schildwelt" onMouseOver="javascript:showDefenition(this);">Schildwelt</a> und diese <a id="Blutsvaeter" onMouseOver="javascript:showDefenition(this);">Blutsväter</a> Einrichtung faszinierte ihn jeden tag aufs neue.
+Aber whärend den 5 Jahren in der dritten <a id="Dyson" onMouseOver="javascript:showDefenition(this);">Dyson-Sphäre</a> der Schildwelt waren auserhalb weit aus mehr vergangen. 2025 kam er hier her, nun war es 2575 dort drausen. Niemand hatte ihn bis dahin gefunden. "Wer würde schon in der dritten Dyson-Sphäre suchen", dachte er sich. Doch vor ein paar Tagen kam ein kleines <a id="UNSC">UNSC</a> Schiff an.
+
 </body>
 </html>
