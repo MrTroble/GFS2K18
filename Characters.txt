@@ -1,3 +1,6 @@
+
+Jahr 2582 Unbekannte Schildwelt
+
 Protagonist
 
 Ethan Smith
@@ -8,11 +11,25 @@ Abteilung: N/A (ehemalig N.S.A -> Cyber-War -> Defence Force)
 Stärken: Informatik
 Rang: N/A (ehemaliger Lead-programmer)
 Einstellung: liberal | qualtitativer Utilitarist
-Staatsform: Kommunismus (ehemalig Demokratie)
+Staatsform: Marxismus (ehemalig Demokratie)
 Herkunft: Ehemaliges Österreich
 
-Links | Kommunismus ausprobieren | gewalt abneigend | eine der besten Informatiker | 2025 auf eine Schildwelt geflohen
+Links | gewalt abneigend | eine der besten Informatiker | 2025 auf eine Schildwelt geflohen
 stress mit den Vorreitern (N.S.A) des ONI's | qualtitativer Utilitarist | und damit gegner von Dr Cathrin Halsey (quantitytiver Utilitarismus)
+
+===========================================================================================================================================================================================================================
+
+TRIFFT AUF CREW VON
+
+Schiff:
+
+Name: UNSC S.S.IO 09
+Typ Korvette
+Klasse: Prowler-Klasse
+Erbaut: 2572
+Länge: 163m
+Breite: 114m
+Höhe: 79m
 
 ===========================================================================================================================================================================================================================
 
@@ -47,17 +64,19 @@ Herkunft: N/A (Vermutlich Kolonie)
 
 ===========================================================================================================================================================================================================================
 
-Lia - 742
+Lia (Horváth) - 742
 
 Alter: 25
 Beruf: Spartaner-7
 Abteilung: UNSC Navy -> ONI -> Kilo One Seven 
-Stärken: Rifle
+Stärken: Sniper-Rifle
 Rang: Chief Petty Officer
 Einstellung: Neutral | Spartan - bischen hinterfragend aber weiterhin zurückhaltend
 Staatsform: Militär Diktatur
 Herkunft: Von Reach geflohene Eltern die danach auf einem Raumschiff gelebt haben (auf Raumschiff geboren)
           -Geheim gehaltene Informationen durch eine Hackerangriff von Ethan Smith wurde die Info an Lia, Osman und Ethan weiter gegeben
+
+Tochter von @Tamás Horváth
 
 7bener Spatanerin | Kilo One Seven | ehr geschlossen | zurückhaltend | macht immer ihren job | Sniperin
  
@@ -78,14 +97,16 @@ Herkunft: N/A (Vermutlich Kolonie)
 
 ===========================================================================================================================================================================================================================
 
-Admiral Osman
+Admiral Serin Osman (AKA Serin - 019 als Spartanerin)
 
-Alter: 104
-Beruf | Stärken: UNSC High Command Admiral - ONI | Leiterin des ONI
-Rang: Petty Officer Thired Class
-Einstellung: Anführer - Quantityativ Utilitaristisch
+Alter: 71
+Beruf: Admiral
+Stärken: ONI Leiterin
+Abteilung: UNSC Navy -> ONI
+Rang: Admiral
+Einstellung: Anführer - Quantitiv Utilitaristisch
 Staatsform: Invertiertes Räte System (Diktatur)
-Herkunft: N/A (Vermutlich Orientalisch | Erde)
+Herkunft: (Innere Erden Kolonie) Cascade -> bei St. Malo
 
 Aus dem Spartaner Programm geflogen danach Kariere beim ONI gemacht | Wie in Kilo Five | nach dem Tod von Peggy zur Leiterin des ONI ernant
 
@@ -93,52 +114,75 @@ Aus dem Spartaner Programm geflogen danach Kariere beim ONI gemacht | Wie in Kil
 
 Dimitri Heslenko
 
-ODST | Russe
+Alter: 49
+Beruf: ODST
+Abteilung: UNSC -> UNSCE Defence Force -> UNSC Unified Ground Command -> UNSC Marine Corps
+Staatsform: Semipräsidentielles Regierungssystem
+Herkunft: Russland
 
 ===========================================================================================================================================================================================================================
 
 Boris Delove 
 
-ODST | Russe
+Alter: 56
+Beruf: ODST
+Abteilung: UNSC -> UNSC Defence Force -> UNSC Unified Ground Command -> UNSC Marine Corps
+Staatsform: Semipräsidentielles Regierungssystem
+Herkunft: Russland
 
 ===========================================================================================================================================================================================================================
 
 Andy Willsone
 
-ODST | 
+Alter: 36
+Beruf: ODST
+Abteilung: UNSC -> UNSCE Defence Force -> UNSC Unified Ground Command -> UNSC Marine Corps
+Staatsform: Palamentarisches Regierungssystem
+Herkunft: Groß Britanien
 
 ===========================================================================================================================================================================================================================
 
 Alina Frank
 
-F. ODST |
+Alter: 46
+Beruf: ODST
+Stärken: UNSC -> UNSCE Defence Force -> UNSC Unified Ground Command -> UNSC Marine Corps
+Staatsform: parlamentarische Demokratie
+Herkunft: Deutschland
 
 ===========================================================================================================================================================================================================================
 
 Alice Murphy
 
-Sprachforschrin | bischen Informatik kenntnisse
+Alter: 36
+Beruf: Sprachforschrin
+Abteilung: UNSC Navy -> ONI
+Staatsform: parlamentarische Demokratie
+Stärken: bischen Informatik kenntnisse
+Herkunft Irish
 
 ===========================================================================================================================================================================================================================
 
-Alexei Krayev
+Tamás Horváth
 
-Engineur | Russe
+Alter: 32
+Beruf: Engineur
+Abteilung: UNSC Navy -> ONI
+Staatsform: parlamentarische Demokratie
+Herkunft: Reach
+
+Vater von Lia ohne das ers wusste | Mutter von Lia bei angriff auf Raumschiff gestorben (bzw. MIA)
 
 ===========================================================================================================================================================================================================================
 
-Laura Horváth
+Laura Krayev
 
-Engineurin
+Alter: 62
+Beruf: Engineurin
+Abteilung: UNSC Navy -> ONI
+Staatsform: Semipräsidentielles Regierungssystem
+Herkunft: Russland
 
 ===========================================================================================================================================================================================================================
 
-Schiff:
 
-Name: UNSC S.S.IO 09
-Typ Korvette
-Klasse: Prowler-Klasse
-Erbaut: 2596
-Länge: 163m
-Breite: 114m
-Höhe: 79m
