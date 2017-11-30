@@ -192,6 +192,13 @@ Staatsform: Protokolle
 Herkunft: Unbekannt
 Rasse: K.I.
 
+Immer zu Schnell
+Alter: N/A
+Beruf: Techniker
+Abteilung: N/A
+Staatsform: Protokolle
+Herkunft: Unbekannt
+Rasse: Huragok
 
 
 
