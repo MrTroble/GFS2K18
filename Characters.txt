@@ -1,5 +1,7 @@
+1. Zeit: Jahr 2582
+1. Ort: Unbekannte Schildwelt
 
-Jahr 2582 Unbekannte Schildwelt
+=========================================================================
 
 Protagonist
 
@@ -14,8 +16,8 @@ Einstellung: liberal | qualtitativer Utilitarist
 Staatsform: Marxismus (ehemalig Demokratie)
 Herkunft: Ehemaliges Österreich
 
-Links | gewalt abneigend | eine der besten Informatiker | 2025 auf eine Schildwelt geflohen
-stress mit NSA | qualtitativer Utilitarist | und damit gegner von Dr Cathrin Halsey (quantitytiver Utilitarismus)
+gewalt abneigend | eine der besten Informatiker | 2025 auf eine Schildwelt geflohen
+stress mit NSA/HAA | qualtitativer Utilitarist
 
 =========================================================================
 
@@ -24,12 +26,11 @@ TRIFFT AUF CREW VON
 Schiff:
 
 Name: UNSC S.S.IO 09
-Typ Korvette
+Typ: Korvette
 Klasse: Prowler-Klasse
 Erbaut: 2572
 Länge: 163m
 Breite: 114m
-Höhe: 79m
 
 =========================================================================
 
@@ -44,7 +45,7 @@ Einstellung: Neutral | Spartan
 Staatsform: Militär Diktatur
 Herkunft: N/A (Vermutlich Kolonie)
 
-7bener Spataner | Kilo One Seven | Humorvoll | n bischen verschlossen
+7er Spataner | Kilo One Seven | Humorvoll | n bischen verschlossen
 
 =========================================================================
 
@@ -60,7 +61,7 @@ Staatsform: Militär Diktatur
 
 Herkunft: N/A (Vermutlich Kolonie)
 
-7bener Spataner | Kilo One Seven | Etwas rau | Zufrieden | Ehrlich | Offen | Humorvoll
+7er Spataner | Kilo One Seven | Etwas rau | Zufrieden | Ehrlich | Offen | Humorvoll
 
 =========================================================================
 
@@ -78,7 +79,7 @@ Herkunft: Von Reach geflohene Eltern die danach auf einem Raumschiff gelebt habe
 
 Tochter von @Tamás Horváth
 
-7bener Spatanerin | Kilo One Seven | ehr geschlossen | zurückhaltend | macht immer ihren job | Sniperin
+7er Spatanerin | Kilo One Seven | eher geschlossen | zurückhaltend | macht immer ihren job | Sniperin
  
 =====================================================================
 
@@ -89,11 +90,11 @@ Beruf: Spartaner-7
 Abteilung: UNSC Navy -> ONI -> Kilo One Seven
 Stärken: Overwatch
 Rang: Petty Officer Thired Class
-Einstellung: Neutral | Spartan - bischen 
+Einstellung: Neutral | Spartan - -"- / ähnlich wie Lia
 Staatsform: Militär Diktatur
 Herkunft: N/A (Vermutlich Kolonie)
 
-7bener Spatanerin | Kilo One Seven | Offen | Sehr Diplomatisch | Nett kann aber auch anders | Watcherin
+7er Spatanerin | Kilo One Seven | Offen | Sehr Diplomatisch | Nett kann aber auch anders | Watcherin
 
 =========================================================================
 
@@ -159,7 +160,7 @@ Beruf: Sprachforschrin
 Abteilung: UNSC Navy -> ONI
 Staatsform: parlamentarische Demokratie
 Stärken: bischen Informatik kenntnisse
-Herkunft Irish
+Herkunft: Irish
 
 =========================================================================
 
@@ -186,11 +187,13 @@ Herkunft: Russland
 
 Unnachgiebige Einsamkeit
 Alter: 4256
-Beruf: Illuminat
+Beruf: Illuminat (Kontrolle einer Blutsväter-Einrichtung)
 Abteilung: Illuminaten
 Staatsform: Protokolle
-Herkunft: Unbekannt
+Herkunft: Unbekannt (vermutlich arche)
 Rasse: K.I.
+
+=========================================================================
 
 Immer zu Schnell
 Alter: N/A
@@ -200,5 +203,43 @@ Staatsform: Protokolle
 Herkunft: Unbekannt
 Rasse: Huragok
 
+=========================================================================
 
+Kell 'Mdama
+Alter: 25
+Beruf: Kämpfer
+Abteilung: Spionage
+Staatsform: Diktatur
+Herrkunft: Sanghelios -> provinz Mdama
+Rasse: Sangheili
+
+=========================================================================
+
+Van 'Mdama
+Alter: 23
+Beruf: Kämpfer
+Abteilung: Infanterie
+Staatsform: Diktatur
+Herrkunft: Sanghelios -> provinz Mdama
+Rasse: Sangheili
+
+=========================================================================
+
+Mahe 'Mdama
+Alter: 21
+Beruf: Kämpfer
+Abteilung: Infanterie
+Staatsform: Diktatur
+Herrkunft: Sanghelios -> provinz Mdama
+Rasse: Sangheili
+
+=========================================================================
+
+Bask 'Mdama
+Alter: 23
+Beruf: Kämpfer
+Abteilung: Infanterie
+Staatsform: Diktatur
+Herrkunft: Sanghelios -> provinz Mdama
+Rasse: Sangheili
 
