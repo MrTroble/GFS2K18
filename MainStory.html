@@ -2,44 +2,57 @@
 <html>
 <head>
 <meta charset="utf-8">
+	<link href="Normal.css" type="text/css" rel="stylesheet"/>
 <title>Story</title>
 </head>
-<body style="font-family: sans-serif;color: white;background-color: rgba(42,42,42,1.00);">
-<div onMouseOut="javascript:hideDefenition();" id="DIV_EN" style="visibility: collapse; border-style: hidden;display: block; position: fixed; top: 0px; left: 0px; z-index: 2;background-color: white">
-	<iframe id="IFRAME" width="250" height="150" frameborder="0" style="border-bottom-style: hidden;"></iframe>
+<body id="body">
+<div onClick ="javascript:hideDefenition();" id="BACK" style="visibility: collapse; border-style: hidden;display: block; position: fixed; top: 0px; left: 0px; width: 100%;height: 100%; z-index: 1;background-color: rgba(0,0,0,0.54);">
+	Klicke neben das Feld um die Anzeige zu schließen
+	</div>
+<div onClick ="javascript:hideDefenition();" id="DIV_EN" style="visibility: collapse; border-style: hidden;display: block; position: fixed; top: 0px; left: 0px; z-index: 2;background-color: rgba(42,42,42,1.00);">
+	<iframe id="IFRAME" frameborder="0" style="border-bottom-style: hidden;background-color: rgba(42,42,42,1.00);" onload="resizeIframe(this)" ></iframe>
 </div>
 <script>
-	    function getPos(element) {
-			var rect = element.getBoundingClientRect();
-            return {x:rect.left,y:rect.top}
-        }
-		
-		function showDefenition(element){
-			var str = element.id;
-			var xy = getPos(element);
-			document.getElementById("IFRAME").src = str + ".html"
+function viewport()
+{
+var e = window
+, a = 'inner';
+if ( !( 'innerWidth' in window ) )
+{
+a = 'client';
+e = document.documentElement || document.body;
+}
+return { width : e[ a+'Width' ] , height : e[ a+'Height' ] }
+}
+	    function resizeIframe(obj) {
 			var stl = document.getElementById("DIV_EN").style;
-			stl.left = xy.x + "px";
-			stl.top = xy.y + "px";
+            obj.style.left = stl.left;
+			obj.style.top = stl.top;
+			obj.style.width = stl.width;
+			obj.style.height = stl.height;
+        }
+			
+		function showDefenition(element){
+			document.getElementById("BACK").style.visibility = "visible";
+			document.getElementById("IFRAME").src = element.id + ".html";
+			
+			var xy = viewport();
+			var stl = document.getElementById("DIV_EN").style;
+
+			stl.left = (xy.width / 2 - 400) + "px";
+			stl.top = (xy.height / 2 - 300) + "px";
+			stl.width = "800px";
+			stl.height = "600px";
 			stl.visibility = "visible";
+			
 		}
-	    
 	    function hideDefenition(){
 			document.getElementById("DIV_EN").style.visibility = "collapse";
+			document.getElementById("BACK").style.visibility = "collapse";
 		}
 </script> 
-<style>
-	html{
-		line-height: 1.5;
-		font-size: 18px;
-	}
-	a{
-		color: red;
-		text-decoration: none;
-	}
-</style>
 <div align="center">
-<div align="left" style="width: 1200px">
+<div align="left" style="width: 1200px" id="main">
 <p style="font-size: 50px;"><strong>Halo: Der letzte seiner Art</strong></p>
 	<ul>
 		<li>Inhalt</li>
@@ -94,7 +107,7 @@ Diese Story wurde also beinflusst von meinen Lieblings Spielen, Filmen, Serien u
 </details>
 <details>
 	<summary><a>Mass Effect</a></summary>
-	<p>Zu sagen diese Reihe ist ein Science Fiction RPG ist untertrieben. Diese Reihe IST DAS Science Fiction RPG. Zu sehen wie diese Reihe durch die schiere Masse (no pun intended) an Inhalt in Mass effect: Andromeda vernichtet wurde ist traurig. Diese Reihe ist mir über seine anfängliche triologie einfach ans Herz gewachsen. Alle Karaktäre und Dialoge sind mir ans Herz gewachsen. Dieses Spiel verkörpert für mich eine gute Science Fiction Story so wie eine gute Umsetzung der solchen. Der erste Titel Mass effect erschien 2007 als Xbox exclusive bei Microsoft bis EA schließlich 2008 BioWare aufkaufte und das Spiel mit dem Entwickler Demurge Studios ebenfalls für den PC zugänglich machte. Seit dem gehört BioWare zu EA , leider, denn es fing schon 2012 mit dem dritten Teil der Reihe. Mann fing plötzlich an Karaktäre aus dem nichts her zu zaubern und einen Kampf auf den man sich über 3 Spiel lang vorbereitet hat einfach nicht zu bringen?! Mein Gott Mass effect 3 ist gut BIS auf die letzten 20 Minuten des Spiels. Aber das war erst die Spitze des Eisbergs. Dann kam Mass effect: Andromeda. Übersäht mit bugs und zu viel Inhalt mit zu wenig tiefgang hat dieses Spiel trotz dem noch einnahmen weit über der 100 Millionen Grenze gemacht (währe ohne das EA Marketing nicht möglich gewesen). Wir können nur hoffen das der für dieses Jahr Juni angekündigte Titel Mass effect: Annihilation wieder besser wird. Es wurde auf Grund dieser Vorfälle bereits eines der drei BioWare Studios geschlossen (BioWare Montreal)</p>
+	<p>Zu sagen diese Reihe ist ein Science Fiction RPG ist untertrieben. Diese Reihe IST DAS Science Fiction RPG schlecht hin. Zu sehen wie diese Reihe durch die schiere Masse (no pun intended) an Inhalt in Mass effect: Andromeda sowie die Geldgeilheit von EA vernichtet wurde ist traurig. Diese Reihe ist mir durch seine anfängliche triologie einfach ans Herz gewachsen. Alle Charaktäre und Dialoge sind mir ans Herz gewachsen. Dieses Spiel verkörpert für mich eine gute Science Fiction Story so wie eine gute Umsetzung der solchen. Der erste Titel: "Mass effect" erschien 2007 als Xbox exclusive bei Microsoft bis EA schließlich 2008 BioWare aufkaufte und das Spiel mit dem Entwickler Demurge Studios ebenfalls für den PC zugänglich machte. Seit dem gehört BioWare zu EA , leider, denn es fing schon 2012 mit dem dritten Teil der Reihe. Mann fing plötzlich an Charaktäre aus dem nichts her zu zaubern und einen Kampf auf den man sich über 3 Spiel lang vorbereitet hat einfach nicht zu bringen?! Mein Gott Mass effect 3 ist gut BIS auf die letzten 20 Minuten des Spiels. Aber das war erst die Spitze des Eisbergs. Dann kam Mass effect: Andromeda. Übersäht mit bugs und zu viel Inhalt mit zu wenig tiefgang hat dieses Spiel trotz dem noch einnahmen weit über der 100 Millionen Grenze gemacht (währe ohne das EA Marketing nicht möglich gewesen). Es wurde auf Grund dieser Vorfälle bereits eines der drei BioWare Studios geschlossen (BioWare Montreal)</p>
 	<h2>Mass effect</h2>
 	<ul>
 		<li>Neuster Titel: <a href="https://en.wikipedia.org/wiki/Mass_Effect:_Andromeda" target="_blank">Mass Effect: Andromeda</a></li>
@@ -112,12 +125,25 @@ Diese Story wurde also beinflusst von meinen Lieblings Spielen, Filmen, Serien u
 </details>
 <details>
 	<summary><a>Titanfall</a></summary>
+	<p>Ein paar Ex-COD-Entwickler hatten die schnautze voll ein scheiß Spiel wie COD zu Produzieren und haben sich dafür entschieden bei Infinity Ward zu kündigen und ihre eigene Firma aufzu machen. Daraus wurde Respawn Enterteinment und daraus wurde das grandiose IP (Indipendend Produkt) Titanfall. Mit eine balancendem Multiplayer guten Mechaniken und Waffen sowie einer bemerkenswerten Story hat Respawn nur gute bis sehr gute kritiken bekommen. Dieses Spiel hat die Wohl glüklichste Spielerschaft von allen von mir gespielten Spielen. Leider bedeutet das noch keine Verkäufe. Durch das schlechte Marketing (in diesem Fall) durch EA wurden hier bei 2 Spielen nur Rund 1.7 Millionen Einheiten verkauft auf 3 Verschiednen Platformen. Leider besitzt nur der zweite Teil der Reihe eine Story spielbare Story</p>
+	<h2>Titanfall</h2>
+	<ul>
+		<li>Neuster Titel: <a href="https://en.wikipedia.org/wiki/Titanfall_2" target="_blank">Titanfall 2</a></li>
+		<ul>
+			<li>Titel der Reihe (in Veröffentlichungs Reihenfolge, ohne Mobilmarkt):</li>
+			<li><a href="https://en.wikipedia.org/wiki/Titanfall" target="_blank">Titanfall</a></li>
+			<li><a href="https://en.wikipedia.org/wiki/Titanfall_2" target="_blank">Titanfall 2</a></li>
+		</ul>
+		<li>Momentaner Entwickler: <a href="https://en.wikipedia.org/wiki/Respawn_Entertainment" target="_blank">Respawn Entertainment</a></li>
+		<li>Momentaner Publisher: <a href="https://en.wikipedia.org/wiki/Electronic_Arts" target="_blank">Electronic Arts</a></li>
+		<li>Momentane Story Writer: Steve Fukuda, Manny Hagopian, Jesse Stern</li>
+	</ul>
 </details>
 <h3 id="0">Zusammenfassung</h3>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/yFrp0X1bY9I?rel=0" frameborder="0" allowfullscreen></iframe>
 <br>
 <h2 id="1">Hurra die Welt geht unter</h2>
-Er saß auf einem selbstgebauten liegestuhlähnlichen Gebilde aus Holz. Während er "Hurra die Welt geht unter" von K.I.Z hörte, setzte er seine Sonnenbrille auf und er bemerkte, dass der Song gerade seine Situation wieder spiegelt. 5 Jahre war es nun her. Seitdem war er nun hier auf dieser Schildwelt und diese Blutsväter Einrichtung faszinierte ihn jeden Tag aufs Neue. Aber während den 5 Jahren in der dritten Dyson-Sphäre der Schildwelt, waren außerhalb weitaus mehr vergangen. 2025 kam er hier her, nun war es 2582 dort draußen. Niemand hatte ihn bis dahin gefunden. Wer würde schon in der dritten Dyson-Sphäre suchen? Doch vor ein paar Tagen kam eine kleine UNSC Korvette der Prowler-Klasse an. Und das Letzte was er hier gebrauchen konnte waren neugierige ONI Typen die herumschnüffelten, dennoch waren es auch nur Menschen die Schutz vor den Halos suchten. Niemand konnte etwas dagegen tun, weder von den Archen aus noch konnte ein Huragok etwas um stöpseln. Ja, die Welt wird ohne Zweifel untergehen aber er und nun auch ein paar ONI Typen saßen in einem der vielen Bunker. "Wir Menschen hören jetzt hoffentlich, zumindest für eine Weile, auf uns gegenseitig zu bekriegen", dachte er, "Hoffentlich dachten die ONI Autokraten auch so". Er ging davon aus das auch an paar Spartaner unter ihnen waren und die will man nicht zum Feind haben. Trotz dem er musste sichergehen, dass sie keine Gefahr für ihn darstellten. Nach langem und intensivem Überlegen kam er zu dem Schluss, dass er lieber erst ein paar Informationen sammeln sollte, denn das war schließlich auch seine Hauptaufgabe beim HAA gewesen ... bis zu dem Unfall. Er erinnerte sich kurz an die alte Zeit. Er stand auf um zu seinem mühsam selbst gebauten Holzhaus zu gehen. Er hätte es sich auch einfach machen können und in eins der vorgefertigten Häuser der Blutsväter einziehen können. Vielleicht hätte ihm sogar ein Huragok oder Unnachgiebige Einsamkeit, der Monitor der Einrichtung, geholfen eine modernere, komfortablere und effizientere Unterkunft zu bauen. Aber er fand es so einfach besser, er mochte die Atmosphäre des Hauses und allein der Fakt das er es selber konstruiert und erbaut hat machte es schon zu etwas Besonderem. Natürlich war auch die Tür nicht sonderlich gesichert aber das störte ihn, auf Grund seiner Position, nicht sonderlich. Es war eine einfache Holztür mit einer Hölzernen Türklinke, mehr nicht. Er ging hinein, nach links an einem Regal vorbei und öffnete die Tür zum neben Raum, ging hindurch, dann an weiteren zwei Regalen vorbei direkt auf die Wendeltreppe zu. Als er im zweiten Stock an kam fragte er sich wie so oft warum er die Etage überhaupt gebaut hat, sie war bis auf ein einziges Regal an der Wand völlig leer. Er ging zum Regal und nahm sein Daten-Tablet aus dem Regal. Danach ging er wieder hinunter und setzte sich an den Tisch direkt neben der Treppe. Während er das Daten-Tablet anschaltete stellte er im Kopf eine Liste zusammen an dingen die er benötigen würde um Informationen aus dem Schiff gegeben falls sogar einem Spartaner oder der K.I zu extrahieren. Da war einmal das Problem das Schiff sowie die Implantate der Spartaner einen Datenextraaktionsschutz hatten den es zu umgehen galt und das alles so, dass die K.I nichts mitbekam. Das Beste war wohl wenn er zuerst die K.I ausschaltet und dann lieber nur vorsichtig Daten aus dem Schiff extrahieren würde. Also suchte er nach einem der Anti-K.I Kits die er damals beim HAA zusammen mit seinen Kollegen vom K.I Programm in Kooperation mit dem BND und der NSA geschrieben hatte. Da die K.I’s nun mehr purer Intellekt sind war es fast unmöglich sie auszutricksen und die Technik hatte sich auf Grund der gefundenen Blutsväter Relikte ganz schön verändert und vor allem auch verbessert. Das bedeutete, dass er wohl ein paar Sachen umschreiben musste. Immerhin kannte er sich auch damit gut aus da er kurze Zeit in der K.I Abteilung mit NSA und BND zusammen an einer K.I gearbeitet hat, bis zu dem Unfall und da waren sie wieder, die Erinnerungen. Die Erinnerungen an eine Zeit die er lieber vergessen wollte. Es gab Arbeit zu tun die ihn ablenkte. Wie jeder Akademiker flüchtete auch er sich in seine Arbeit.
+Er saß auf einem selbstgebauten liegestuhlähnlichen Gebilde aus Holz. Während er "<a id="KIZ" onMouseMove="javascript:showDefenition(this)">Hurra die Welt geht unter</a>" von K.I.Z hörte, setzte er seine Sonnenbrille auf und er bemerkte, dass der Song gerade seine Situation wieder spiegelt. 5 Jahre war es nun her. Seitdem war er nun hier auf dieser <a id="Schildwelt" onMouseMove="javascript:showDefenition(this)">Schildwelt</a> und diese Blutsväter Einrichtung faszinierte ihn jeden Tag aufs Neue. Aber während den 5 Jahren in der dritten Dyson-Sphäre der Schildwelt, waren außerhalb weitaus mehr vergangen. 2025 kam er hier her, nun war es 2582 dort draußen. Niemand hatte ihn bis dahin gefunden. Wer würde schon in der dritten Dyson-Sphäre suchen? Doch vor ein paar Tagen kam eine kleine UNSC Korvette der Prowler-Klasse an. Und das Letzte was er hier gebrauchen konnte waren neugierige ONI Typen die herumschnüffelten, dennoch waren es auch nur Menschen die Schutz vor den Halos suchten. Niemand konnte etwas dagegen tun, weder von den Archen aus noch konnte ein Huragok etwas um stöpseln. Ja, die Welt wird ohne Zweifel untergehen aber er und nun auch ein paar ONI Typen saßen in einem der vielen Bunker. "Wir Menschen hören jetzt hoffentlich, zumindest für eine Weile, auf uns gegenseitig zu bekriegen", dachte er, "Hoffentlich dachten die ONI Autokraten auch so". Er ging davon aus das auch an paar Spartaner unter ihnen waren und die will man nicht zum Feind haben. Trotz dem er musste sichergehen, dass sie keine Gefahr für ihn darstellten. Nach langem und intensivem Überlegen kam er zu dem Schluss, dass er lieber erst ein paar Informationen sammeln sollte, denn das war schließlich auch seine Hauptaufgabe beim HAA gewesen ... bis zu dem Unfall. Er erinnerte sich kurz an die alte Zeit. Er stand auf um zu seinem mühsam selbst gebauten Holzhaus zu gehen. Er hätte es sich auch einfach machen können und in eins der vorgefertigten Häuser der Blutsväter einziehen können. Vielleicht hätte ihm sogar ein Huragok oder Unnachgiebige Einsamkeit, der Monitor der Einrichtung, geholfen eine modernere, komfortablere und effizientere Unterkunft zu bauen. Aber er fand es so einfach besser, er mochte die Atmosphäre des Hauses und allein der Fakt das er es selber konstruiert und erbaut hat machte es schon zu etwas Besonderem. Natürlich war auch die Tür nicht sonderlich gesichert aber das störte ihn, auf Grund seiner Position, nicht sonderlich. Es war eine einfache Holztür mit einer Hölzernen Türklinke, mehr nicht. Er ging hinein, nach links an einem Regal vorbei und öffnete die Tür zum neben Raum, ging hindurch, dann an weiteren zwei Regalen vorbei direkt auf die Wendeltreppe zu. Als er im zweiten Stock an kam fragte er sich wie so oft warum er die Etage überhaupt gebaut hat, sie war bis auf ein einziges Regal an der Wand völlig leer. Er ging zum Regal und nahm sein Daten-Tablet aus dem Regal. Danach ging er wieder hinunter und setzte sich an den Tisch direkt neben der Treppe. Während er das Daten-Tablet anschaltete stellte er im Kopf eine Liste zusammen an dingen die er benötigen würde um Informationen aus dem Schiff gegeben falls sogar einem Spartaner oder der K.I zu extrahieren. Da war einmal das Problem das Schiff sowie die Implantate der Spartaner einen Datenextraaktionsschutz hatten den es zu umgehen galt und das alles so, dass die K.I nichts mitbekam. Das Beste war wohl wenn er zuerst die K.I ausschaltet und dann lieber nur vorsichtig Daten aus dem Schiff extrahieren würde. Also suchte er nach einem der Anti-K.I Kits die er damals beim HAA zusammen mit seinen Kollegen vom K.I Programm in Kooperation mit dem BND und der NSA geschrieben hatte. Da die K.I’s nun mehr purer Intellekt sind war es fast unmöglich sie auszutricksen und die Technik hatte sich auf Grund der gefundenen Blutsväter Relikte ganz schön verändert und vor allem auch verbessert. Das bedeutete, dass er wohl ein paar Sachen umschreiben musste. Immerhin kannte er sich auch damit gut aus da er kurze Zeit in der K.I Abteilung mit NSA und BND zusammen an einer K.I gearbeitet hat, bis zu dem Unfall und da waren sie wieder, die Erinnerungen. Die Erinnerungen an eine Zeit die er lieber vergessen wollte. Es gab Arbeit zu tun die ihn ablenkte. Wie jeder Akademiker flüchtete auch er sich in seine Arbeit.
 
 <h2 id="2">Feindkontakt</h2>
 -13 Stunden später-<br><br>
